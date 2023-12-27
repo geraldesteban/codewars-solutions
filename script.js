@@ -167,3 +167,13 @@ function sortArray(array) {
 }
 console.log(sortArray([5, 8, 6, 3, 4]));
  */
+
+/*
+// Calculate average
+function findAverage(array) {
+  return array.length === 0
+    ? 0
+    : array.reduce((acc, num) => acc + num, 0) / array.length;
+}
+console.log(findAverage([9, 9, 9]));
+*/
