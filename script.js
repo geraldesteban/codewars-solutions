@@ -177,3 +177,20 @@ function findAverage(array) {
 }
 console.log(findAverage([9, 9, 9]));
 */
+
+/* 
+// If you can't sleep, just count sheep!!
+var countSheep = function (num) {
+  const arr = [];
+
+  if (num !== 0) {
+    for (let i = 1; i <= num; i++) {
+      arr.push(`${i} sheep...`);
+    }
+  } else {
+    return "";
+  }
+  return arr.join("");
+};
+console.log(countSheep(3));
+ */
