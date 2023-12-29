@@ -194,3 +194,9 @@ var countSheep = function (num) {
 };
 console.log(countSheep(3));
  */
+
+// Grasshopper - Check for factor
+function checkForFactor(base, factor) {
+  return base % factor === 0 ? true : false;
+}
+console.log(checkForFactor(6, 3));
