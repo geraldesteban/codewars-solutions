@@ -238,3 +238,9 @@ function nbDig(n, d) {
 }
 console.log(nbDig(10, 1));
  */
+
+// Find the stray number
+function stray(numbers) {
+  return numbers.reduce((acc, curr) => acc ^ curr);
+}
+console.log(stray([17, 17, 3, 17, 17, 17, 17]));
