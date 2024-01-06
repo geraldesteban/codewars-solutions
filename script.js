@@ -239,8 +239,20 @@ function nbDig(n, d) {
 console.log(nbDig(10, 1));
  */
 
+/* 
 // Find the stray number
 function stray(numbers) {
   return numbers.reduce((acc, curr) => acc ^ curr);
 }
 console.log(stray([17, 17, 3, 17, 17, 17, 17]));
+ */
+
+/* 
+// Sum of a sequence
+const sequenceSum = (begin, end, step) => {
+  let sum = 0;
+  for (let i = begin; i <= end; i += step) sum += i;
+  return sum;
+};
+console.log(sequenceSum(2, 6, 2));
+ */
