@@ -256,3 +256,13 @@ const sequenceSum = (begin, end, step) => {
 };
 console.log(sequenceSum(2, 6, 2));
  */
+
+/* 
+// Remove the minimum
+function removeSmallest(numbers) {
+  return numbers.length > 0
+    ? numbers.filter((_, i) => i !== numbers.indexOf(Math.min(...numbers)))
+    : [];
+}
+console.log(removeSmallest([5, 3, 2, 1, 4]));
+ */
