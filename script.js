@@ -258,6 +258,7 @@ console.log(sequenceSum(2, 6, 2));
  */
 
 /* 
+
 // Remove the minimum
 function removeSmallest(numbers) {
   return numbers.length > 0
@@ -265,4 +266,28 @@ function removeSmallest(numbers) {
     : [];
 }
 console.log(removeSmallest([5, 3, 2, 1, 4]));
+ */
+
+/* 
+// Get the Middle Character
+function getMiddle(s) {
+  const mid = Math.floor(s.length / 2);
+  return s.length % 2 === 0 ? s.substring(mid - 1, mid + 1) : s.charAt(mid);
+}
+console.log(getMiddle("testing"));
+ */
+
+/* 
+// Char Code Calculation
+function calc(x) {
+  return x
+    .split("")
+    .map(c => c.charCodeAt())
+    .join("")
+    .split("")
+    .map(n => +n - 1)
+    .filter(n => +n === 6)
+    .reduce((acc, cur) => acc + cur, 0);
+}
+console.log(calc("ABC"));
  */
