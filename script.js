@@ -291,3 +291,16 @@ function calc(x) {
 }
 console.log(calc("ABC"));
  */
+
+/* 
+// Remove duplicate words
+function removeDuplicateWords(s) {
+  return [...new Set(s.split(" "))].join(" ");
+}
+
+console.log(
+  removeDuplicateWords(
+    "alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta"
+  )
+);
+ */
