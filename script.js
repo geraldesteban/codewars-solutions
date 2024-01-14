@@ -304,3 +304,11 @@ console.log(
   )
 );
  */
+
+/* 
+// Sum of positive
+function positiveSum(arr) {
+  return arr.filter(n => n > 0).reduce((acc, curr) => acc + curr, 0);
+}
+console.log(positiveSum([1, -4, 7, 12]));
+ */
