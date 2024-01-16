@@ -4,29 +4,33 @@
 function squareSum(numbers) {
   return numbers.map(num => num ** 2).reduce((acc, num) => acc + num, 0);
 }
-console.log(squareSum([1, 2, 2]));
-//
+ */
 
+/* 
 // Are You Playing Banjo?
 function areYouPlayingBanjo(name) {
   if (name.charAt(0).toLowerCase() === "r") return `${name} plays banjo`;
   else return `${name} does not play banjo`;
 }
-console.log(areYouPlayingBanjo("Roy"));
+ */
 
+/* 
 // List Filtering
 function filter_list(l) {
   return l.filter(l => Number.isInteger(l));
 }
-console.log(filter_list([1, 2, "a", "b"]));
+ */
 
+/* 
 // Find the smallest integer in the array
 class SmallestIntegerFinder {
   findSmallestInt(args) {
     return Math.min(...args);
   }
 }
+ */
 
+/* 
 // Split Strings
 function solution(str) {
   return str.split("").length % 2 == 0
@@ -36,8 +40,9 @@ function solution(str) {
         .split(/(..)/g)
         .filter(s => s);
 }
-console.log(solution("abc"));
+ */
 
+/* 
 // Data Reverse
 function dataReverse(data) {
   const chunkSize = 8;
@@ -51,13 +56,9 @@ function dataReverse(data) {
 
   return reversedChunks;
 }
-console.log(
-  dataReverse([
-    1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1,
-    0, 1, 0, 1, 0, 1, 0,
-  ])
-);
+ */
 
+/* 
 // Complementary DNA
 function DNAStrand(dna) {
   const complement = {
@@ -72,14 +73,16 @@ function DNAStrand(dna) {
     .map(c => complement[c])
     .join("");
 }
-console.log(DNAStrand("ATTGC"));
+ */
 
+/* 
 // Squares of a Sorted Array leetcode
 function squareArray(array) {
   return array.map(n => Math.abs(n) ** 2).sort((a, b) => a - b);
 }
-console.log(squareArray([-4, -1, 0, 3, 10]));
+ */
 
+/* 
 // Find Maximum and Minimum Values of a List
 var min = function (list) {
   return Math.min(...list);
@@ -88,13 +91,10 @@ var min = function (list) {
 var max = function (list) {
   return Math.max(...list);
 };
-
-console.log(min([4, 6, 2, 1, 9, 63, -134, 566]));
-console.log(max([4, 6, 2, 1, 9, 63, -134, 566]));
  */
 
-// Two Sum
 /* 
+// Two Sum
 function twoSum(numbers, target) {
   for (let i = 0; i < numbers.length; i++) {
     for (let j = i + 1; j < numbers.length; j++) {
@@ -104,24 +104,21 @@ function twoSum(numbers, target) {
     }
   }
 }
-console.log(twoSum([2, 3, 7, 4, 9], 12));
  */
 
-// Well of Ideas - Easy Version
 /* 
+// Well of Ideas - Easy Version
 function well(arr) {
   const count = arr.filter(w => w === "good").length;
   return count === 0 ? "Fail!" : count > 2 ? "I smell a series!" : "Publish!";
 }
-console.log(well(["good", "bad", "good"]));
  */
 
-// Printer Errors
 /* 
+// Printer Errors
 function printerErrors(s) {
   return `${s.split("").filter(s => /[n-z]/.test(s)).length}/${s.length}`;
 }
-console.log(printerErrors("aaabbbbhaijjjm"));
  */
 
 /* 
@@ -137,7 +134,6 @@ function capitalize(s) {
 
   return [e.join(""), o.join("")];
 }
-console.log(capitalize("codewars"));
  */
 
 /*
@@ -145,7 +141,6 @@ console.log(capitalize("codewars"));
 function isLeapYear(year) {
   return year % 100 === 0 ? year % 400 === 0 : year % 4 === 0;
 }
-console.log(isLeapYear(2100));
 */
 
 /* 
@@ -156,7 +151,6 @@ function largest(n, array) {
     .slice(0, n)
     .reverse();
 }
-console.log(largest(2, [7, 6, 5, 4, 3, 2, 1]));
  */
 
 /* 
@@ -165,7 +159,6 @@ function sortArray(array) {
   const odds = array.filter(n => n % 2).sort((a, b) => a - b);
   return array.map(n => (n % 2 ? odds.shift() : n));
 }
-console.log(sortArray([5, 8, 6, 3, 4]));
  */
 
 /*
@@ -175,7 +168,6 @@ function findAverage(array) {
     ? 0
     : array.reduce((acc, num) => acc + num, 0) / array.length;
 }
-console.log(findAverage([9, 9, 9]));
 */
 
 /* 
@@ -192,7 +184,6 @@ var countSheep = function (num) {
   }
   return arr.join("");
 };
-console.log(countSheep(3));
  */
 
 /* 
@@ -200,7 +191,6 @@ console.log(countSheep(3));
 function checkForFactor(base, factor) {
   return base % factor === 0 ? true : false;
 }
-console.log(checkForFactor(6, 3));
  */
 
 /* 
@@ -208,7 +198,6 @@ console.log(checkForFactor(6, 3));
 function opposite(number) {
   return number === 0 ? 0 : -number;
 }
-console.log(opposite(0));
  */
 
 /* 
@@ -216,7 +205,6 @@ console.log(opposite(0));
 function greet(name, owner) {
   return name === owner ? "Hello boss" : "Hello guest";
 }
-console.log(greet("Daniel", "Daniel"));
  */
 
 /* 
@@ -224,7 +212,6 @@ console.log(greet("Daniel", "Daniel"));
 function simpleMultiplication(number) {
   return number % 2 === 0 ? number * 8 : number * 9;
 }
-console.log(simpleMultiplication(8));
  */
 
 /* 
@@ -236,7 +223,6 @@ function nbDig(n, d) {
   }
   return result.split(d).length - 1;
 }
-console.log(nbDig(10, 1));
  */
 
 /* 
@@ -244,7 +230,6 @@ console.log(nbDig(10, 1));
 function stray(numbers) {
   return numbers.reduce((acc, curr) => acc ^ curr);
 }
-console.log(stray([17, 17, 3, 17, 17, 17, 17]));
  */
 
 /* 
@@ -254,18 +239,15 @@ const sequenceSum = (begin, end, step) => {
   for (let i = begin; i <= end; i += step) sum += i;
   return sum;
 };
-console.log(sequenceSum(2, 6, 2));
  */
 
 /* 
-
 // Remove the minimum
 function removeSmallest(numbers) {
   return numbers.length > 0
     ? numbers.filter((_, i) => i !== numbers.indexOf(Math.min(...numbers)))
     : [];
 }
-console.log(removeSmallest([5, 3, 2, 1, 4]));
  */
 
 /* 
@@ -274,7 +256,6 @@ function getMiddle(s) {
   const mid = Math.floor(s.length / 2);
   return s.length % 2 === 0 ? s.substring(mid - 1, mid + 1) : s.charAt(mid);
 }
-console.log(getMiddle("testing"));
  */
 
 /* 
@@ -289,7 +270,6 @@ function calc(x) {
     .filter(n => +n === 6)
     .reduce((acc, cur) => acc + cur, 0);
 }
-console.log(calc("ABC"));
  */
 
 /* 
@@ -297,12 +277,6 @@ console.log(calc("ABC"));
 function removeDuplicateWords(s) {
   return [...new Set(s.split(" "))].join(" ");
 }
-
-console.log(
-  removeDuplicateWords(
-    "alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta"
-  )
-);
  */
 
 /* 
@@ -310,9 +284,9 @@ console.log(
 function positiveSum(arr) {
   return arr.filter(n => n > 0).reduce((acc, curr) => acc + curr, 0);
 }
-console.log(positiveSum([1, -4, 7, 12]));
  */
 
+/* 
 // Count of positives / sum of negatives
 function countPositivesSumNegatives(input) {
   return !input || input.length === 0
@@ -322,9 +296,24 @@ function countPositivesSumNegatives(input) {
         input.filter(n => n < 0).reduce((acc, cur) => acc + cur, 0),
       ];
 }
-console.log(
-  countPositivesSumNegatives([
-    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15,
-  ])
-);
-console.log(countPositivesSumNegatives([]));
+ */
+
+/* 
+// Maximum Length Difference
+function mxdiflg(a1, a2) {
+  if (a1.length === 0 || a2.length === 0) {
+    return -1;
+  }
+
+  let maxLenDiff = -1;
+
+  a1.forEach(x => {
+    a2.forEach(y => {
+      const diff = Math.abs(x.length - y.length);
+      maxLenDiff = Math.max(maxLenDiff, diff);
+    });
+  });
+
+  return maxLenDiff;
+}
+ */
