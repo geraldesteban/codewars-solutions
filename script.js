@@ -317,3 +317,19 @@ function mxdiflg(a1, a2) {
   return maxLenDiff;
 }
  */
+
+/* 
+// Sum The Strings
+function sumStr(a, b) {
+  return String(+a + +b);
+}
+console.log(sumStr("34", "5"));
+ */
+
+/* 
+// Twice as old
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  return Math.abs(sonYearsOld * 2 - dadYearsOld);
+}
+console.log(twiceAsOld(36, 7));
+ */
