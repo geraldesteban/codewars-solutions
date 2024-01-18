@@ -333,3 +333,16 @@ function twiceAsOld(dadYearsOld, sonYearsOld) {
 }
 console.log(twiceAsOld(36, 7));
  */
+
+/* 
+// Sum of differences in array
+function sumOfDifferences(arr) {
+  const arrSort = arr.sort((a, b) => b - a);
+  let sum = [];
+  if (arr.length === 0) 0;
+  for (let i = 0; i < arrSort.length - 1; i++) {
+    sum.push(arrSort[i] - arrSort[i + 1]);
+  }
+  return sum.reduce((acc, cur) => acc + cur, 0);
+}
+ */
