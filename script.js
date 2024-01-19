@@ -346,3 +346,13 @@ function sumOfDifferences(arr) {
   return sum.reduce((acc, cur) => acc + cur, 0);
 }
  */
+
+/* 
+// Multiplication table
+const multiplicationTable = function (size) {
+  return Array.from({ length: size }, (_, i) =>
+    Array.from({ length: size }, (_, j) => (i + 1) * (j + 1))
+  );
+};
+console.log(multiplicationTable(3));
+ */
