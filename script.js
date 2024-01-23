@@ -356,3 +356,10 @@ const multiplicationTable = function (size) {
 };
 console.log(multiplicationTable(3));
  */
+
+/* 
+// Remove anchor from URL
+function removeUrlAnchor(url) {
+  return url.split("#", 1).join();
+} 
+*/
