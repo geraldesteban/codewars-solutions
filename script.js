@@ -363,3 +363,10 @@ function removeUrlAnchor(url) {
   return url.split("#", 1).join();
 } 
 */
+
+/* 
+// Sort and Star
+function twoSort(s) {
+  return s.sort()[0].split("").join("***");
+}
+ */
